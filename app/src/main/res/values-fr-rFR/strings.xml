@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="email">E-mail</string>
+    <string name="password">Mot de passe</string>
+    <string name="login">S\'identifier</string>
+    <string name="register">S\'inscrire</string>
+    <string name="shearch">Chercher</string>
+    <string name="menu">Menu</string>
+    <string name="alert">Alerte</string>
+    <string name="share">Partager</string>
+    <string name="profile">Profil</string>
+    <string name="statistics">Statistiques</string>
+    <string name="emergency">Contacts d\'urgence</string>
+    <string name="About">À propos de nous</string>
+    <string name="Bug">Rapport d\'erreur</string>
+    <string name="Country">Pays</string>
+    <string name="Experience">Expérience</string>
+    <string name="Edit">Éditer</string>
+    <string name="averagew">Activité hebdomadaire moyenne</string>
+    <string name="rides">Balades à vélo:</string>
+    <string name="hours">Heures:</string>
+    <string name="distance">Distance:</string>
+    <string name="averagem">Activité mensuelle moyenne</string>
+    <string name="averagea">Activité annuelle moyenne</string>
+    <string name="phone">Numéro de téléphone</string>
+    <string name="save">Sauver</string>
+    <string name="full">Nom complet</string>
+    <string name="experiences">Expérience (amateur ou professionnel)</string>
+</resources>

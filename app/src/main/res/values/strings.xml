@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name" translatable="false">Ridin bike</string>
+    <string name="title_activity_mapa" translatable="false">Map</string>
+
+
+    //IDIOMAS
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="shearch">Shearch</string>
+    <string name="menu">Menu</string>
+    <string name="alert">Alert</string>
+    <string name="share">Share</string>
+    <string name="profile">Profile</string>
+    <string name="statistics">Statistics</string>
+    <string name="emergency">Emergency contacts</string>
+    <string name="About">About us</string>
+    <string name="Bug">Bug report</string>
+    <string name="Country">Country</string>
+    <string name="Experience">Experience</string>
+    <string name="Edit">Edit</string>
+    <string name="averagew">Average weekly activity</string>
+    <string name="rides">Bike rides:</string>
+    <string name="hours">Hours:</string>
+    <string name="distance">Distance:</string>
+    <string name="averagem">Average monthly activity</string>
+    <string name="averagea">Average annual activity</string>
+    <string name="phone">Phone number</string>
+    <string name="save">Save</string>
+    <string name="full">Full name</string>
+    <string name="experiences">Experience (Amateur or Professional)</string>
+</resources>

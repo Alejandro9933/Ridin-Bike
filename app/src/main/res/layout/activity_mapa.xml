@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mapa">
+
+    <SearchView
+        android:id="@+id/sv_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="@drawable/bg_round"
+        android:elevation="5dp"
+        android:iconifiedByDefault="false"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        map:layout_constraintBottom_toTopOf="@+id/btnalert"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/sv_location" />
+
+    <Button
+        android:id="@+id/btnmenu"
+        style="@style/btns"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/menu"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toStartOf="@+id/btnalert"
+        map:layout_constraintHorizontal_bias="0.5"
+        map:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnalert"
+        style="@style/btns"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="alert"
+        android:text="@string/alert"
+        map:layout_constraintBottom_toBottomOf="@+id/btnmenu"
+        map:layout_constraintEnd_toStartOf="@+id/btnshare"
+        map:layout_constraintHorizontal_bias="0.5"
+        map:layout_constraintStart_toEndOf="@+id/btnmenu" />
+
+    <Button
+        android:id="@+id/btnshare"
+        style="@style/btns"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="share"
+        android:text="@string/share"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.5"
+        map:layout_constraintStart_toEndOf="@+id/btnalert"
+        map:layout_constraintTop_toTopOf="@+id/btnalert" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

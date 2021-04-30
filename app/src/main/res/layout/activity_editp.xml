@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Editp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/txtcountry"
+        style="@style/hints"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/Country"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtexp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtname" />
+
+    <EditText
+        android:id="@+id/txtexp"
+        style="@style/hints"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/experiences"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtcountry" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="139dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="127dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/shrek" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/btns"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="regresa"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtexp" />
+
+    <EditText
+        android:id="@+id/txtname"
+        style="@style/hints"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/full"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtcountry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
