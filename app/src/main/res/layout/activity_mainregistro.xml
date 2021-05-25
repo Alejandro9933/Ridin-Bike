@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="242dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/este" />
+            app:srcCompat="@drawable/icono" />
     </LinearLayout>
 
     <LinearLayout
@@ -29,7 +29,8 @@
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:layout_weight="1"
-            android:orientation="horizontal"></LinearLayout>
+            android:orientation="horizontal"
+            android:textAlignment="center"></LinearLayout>
 
         <EditText
             android:id="@+id/logmail"
@@ -68,10 +69,10 @@
         <Button
             android:id="@+id/crear_s"
             style="@style/btns"
-            android:layout_width="181dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:onClick="reg"
+            android:background="@drawable/round_button"
             android:text="@string/register" />
 
     </LinearLayout>

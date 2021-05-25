@@ -2,30 +2,38 @@ package com.example.ridinbike;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
+import android.database.MatrixCursor;
 import android.os.Bundle;
+import android.widget.SimpleCursorAdapter;
+import android.app.ListActivity;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.ListView;
+import android.content.Intent;
+import android.database.MatrixCursor;
 
-public class Perfil extends AppCompatActivity {
-TextView lblname, lblexp,lblcountry;
+public class Perfil extends ListActivity {
+    Bundle datos;
+MatrixCursor modelo;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_perfil);
-        lblname=findViewById(R.id.lblname);
-        lblexp= findViewById(R.id.lblexp);
-        lblcountry= findViewById(R.id.lblcountry);
-        Bundle datos = getIntent().getExtras();
 
-        lblname.setText(datos.getString("nombre"));
-        lblexp.setText(datos.getString("expe"));
-        lblcountry.setText(datos.getString("pais"));
-    }
-    public void  edit(View view) {
-        Intent intent = new Intent(getApplicationContext(), Editp.class);
-        startActivity(intent);
+        datos= getIntent().getExtras();
+        String cabeceras [] = new String[]{"_id", "img", "nombre", "pais", "exp"};
 
+        modelo= new MatrixCursor(cabeceras);
+
+        modelo.addRow(new Object[]{"0", R.drawable.shrek,datos.getString("nombre"),"País: "+ datos.getString("pais"),"Experiencia: "+ datos.getString("expe")});
+
+        String colDatos[] = new String[]{"img", "nombre", "pais", "exp"};
+
+        int[]  vistas = new int[]{R.id.imvFoto, R.id.Nombre, R.id.Pais, R.id.Exp};
+
+
+        SimpleCursorAdapter adapter = new SimpleCursorAdapter(this, R.layout.activity_perfil, modelo, colDatos,vistas,1);
+        setListAdapter(adapter);
     }
 }

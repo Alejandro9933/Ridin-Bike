@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
 ;
                 if (correo.equals("rodualex") && contraseña.equals("1234")) {
                     Intent intent  = new Intent(getApplicationContext(),mapa.class);
-                    startActivity(intent);
                     logmail.setText("");
                     logpass.setText("");
                     startActivity(intent);

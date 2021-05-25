@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/btnletras"
     android:orientation="vertical"
     tools:context=".mapa">
 
@@ -35,6 +36,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:background="@drawable/round_button"
         android:text="@string/menu"
         map:layout_constraintBottom_toBottomOf="parent"
         map:layout_constraintEnd_toStartOf="@+id/btnalert"
@@ -46,6 +48,7 @@
         style="@style/btns"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
         android:onClick="alert"
         android:text="@string/alert"
         map:layout_constraintBottom_toBottomOf="@+id/btnmenu"
@@ -58,6 +61,7 @@
         style="@style/btns"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/round_button"
         android:onClick="share"
         android:text="@string/share"
         map:layout_constraintEnd_toEndOf="parent"

@@ -74,6 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/round_button"
             android:text="@string/register" />
 
         <Button
@@ -81,6 +82,7 @@
             style="@style/btns"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
             android:layout_weight="1"
             android:text="@string/login" />
     </LinearLayout>

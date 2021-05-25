@@ -48,6 +48,7 @@
         android:layout_marginBottom="50dp"
         android:onClick="savecont"
         android:text="@string/save"
+        android:background="@drawable/round_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
